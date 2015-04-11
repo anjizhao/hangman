@@ -25,7 +25,9 @@ public class Computer {
 
 	public void turn(Character guess) {
 
-		if (wordArray.contains(guess)) {
+		if (missedChars.contains(guess)) {
+			System.out.println("you already guessed that.. so dumb.."); 
+		} else if (wordArray.contains(guess)) {
 			// do stuff 
 			
 			for (int i = 0; i < wordArray.size(); i++) {
